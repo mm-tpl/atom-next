@@ -9,7 +9,8 @@
 		"lint": "eslint ./src/**/*.ts",
 		"compile": "tsc",
 		"build": "npm run clean && npm run lint && npm run compile",
-		"up": "git pull git@github.com:mm-core/base.git cjs"
+		"up": "git pull git@github.com:mm-core/base.git cjs",
+		"release": "np"
 	},
 	"repository": {
 		"type": "https+git",
@@ -39,6 +40,10 @@
 		}
 	],
 	"license": "MIT",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org"
+	},
 	"dependencies": {},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "latest",
@@ -48,6 +53,7 @@
 		"eslint": "latest",
 		"eslint-config-prettier": "latest",
 		"eslint-plugin-import": "latest",
+		"np": "latest",
 		"typescript": "next"
 	}
 }
