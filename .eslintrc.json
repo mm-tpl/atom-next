@@ -1,8 +1,5 @@
 {
-	"env": {
-		"es6": true,
-		"node": true
-	},
+	"parser": "@typescript-eslint/parser",
 	"extends": [
 		"eslint:recommended",
 		"plugin:react/recommended",
@@ -13,12 +10,14 @@
 		"plugin:import/errors",
 		"plugin:import/warnings",
 		"plugin:import/typescript",
-		"prettier",
-		"prettier/@typescript-eslint"
+		"prettier"
 	],
-	"parser": "@typescript-eslint/parser",
+	"env": {
+		"es6": true,
+		"jest": true,
+		"node": true
+	},
 	"parserOptions": {
-		"ecmaVersion": 2021,
 		"sourceType": "module",
 		"ecmaFeatures": {
 			"impliedStrict": true
